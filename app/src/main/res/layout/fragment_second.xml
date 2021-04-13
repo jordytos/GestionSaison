@@ -1,0 +1,72 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PlaceholderFragment">
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:numColumns="2"
+        android:rowCount="2"
+        android:stretchMode="columnWidth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageSaison1"
+            android:layout_row="0"
+            android:layout_column="0"
+            app:layout_constraintBottom_toBottomOf="@+id/imageSaison2"
+            app:layout_constraintEnd_toStartOf="@+id/imageSaison2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"/>
+
+        <ImageView
+            android:id="@+id/imageSaison2"
+            android:layout_row="0"
+            android:layout_column="1"
+            app:layout_constraintBottom_toBottomOf="@+id/imageSaison3"
+            app:layout_constraintEnd_toStartOf="@+id/imageSaison3"
+            app:layout_constraintStart_toEndOf="@+id/imageSaison1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"/>
+
+        <ImageView
+            android:id="@+id/imageSaison3"
+            android:layout_row="1"
+            android:layout_column="0"
+            app:layout_constraintBottom_toBottomOf="@+id/imageSaison4"
+            app:layout_constraintEnd_toStartOf="@+id/imageSaison4"
+            app:layout_constraintStart_toEndOf="@+id/imageSaison2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"/>
+
+        <ImageView
+            android:id="@+id/imageSaison4"
+            android:layout_row="1"
+            android:layout_column="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageSaison3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"/>
+
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

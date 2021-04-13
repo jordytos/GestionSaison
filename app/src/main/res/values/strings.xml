@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GestionSaison</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="action_settings">setting</string>
+    <string name="ete">été</string>
+    <string name="hiver">hiver</string>
+    <string name="printemps">printemps</string>
+    <string name="automne">automne</string>
+    <string name="titre_section0">été</string>
+    <string name="titre_section1">hiver</string>
+    <string name="titre_section2">printemps</string>
+    <string name="titre_section3">automne</string>
+</resources>
